@@ -76,6 +76,34 @@ Audited with axe-core against WCAG 2.1 AA: **zero violations** in both themes at
 320, 375, 768, 1024 and 1440px, with a skip link, visible focus on every
 control and `prefers-reduced-motion` respected.
 
+## Keeping my GitHub profile in step
+
+`public/cv.json` is what makes this repository the single source of truth. My
+[profile repository](https://github.com/SayamDev/SayamDev) fetches it and
+redraws the skills panel on its README, so I never maintain two copies of the
+same list.
+
+It syncs on a daily schedule out of the box. To make it immediate, the deploy
+workflow here posts a `repository_dispatch` to the profile repository after a
+successful deploy — which needs one secret:
+
+1. Create a **fine-grained** personal access token at
+   <https://github.com/settings/personal-access-tokens/new>, with:
+   - **Repository access:** only `SayamDev/SayamDev`
+   - **Permissions → Repository → Contents:** *Read and write*
+   - An expiry you are willing to rotate
+2. Store it as a secret on this repository:
+
+   ```bash
+   gh secret set PROFILE_SYNC_TOKEN --repo SayamDev/cv
+   ```
+
+   The command reads the token from your terminal; it is never written to a
+   file or committed.
+
+Without the secret the step prints a note and succeeds — deployment never
+depends on it, and the profile still syncs daily.
+
 ## Deploying your own
 
 Fork it, replace `src/data/cv.ts` with your own details, set **Settings → Pages

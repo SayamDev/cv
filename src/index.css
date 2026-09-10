@@ -1,0 +1,185 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/newsreader';
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: 'Newsreader Variable', ui-serif, Georgia, serif;
+
+  /* Warm paper, near-black ink, one burnt-orange accent. Every text colour
+     below clears WCAG AA (4.5:1) on the ground it is used against. */
+  --color-paper: #faf9f7;
+  --color-surface: #ffffff;
+  --color-panel: #f2efe9;
+  --color-rule: #e4e0d8;
+  --color-rule-strong: #d3cec3;
+
+  --color-ink: #14161a;      /* 17.2:1 */
+  --color-ink-2: #3a3f47;    /* 10.1:1 */
+  --color-ink-3: #5c626c;    /*  5.8:1 */
+
+  --color-accent: #a8460c;   /*  5.6:1 */
+  --color-accent-soft: #f7ece3;
+
+  --radius-card: 12px;
+  --shadow-card: 0 1px 2px rgb(20 22 26 / 0.04), 0 8px 24px -12px rgb(20 22 26 / 0.12);
+}
+
+/* The toggle sets data-theme; with no choice made we follow the system. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-paper: #0e0f12;
+    --color-surface: #16181c;
+    --color-panel: #1b1e23;
+    --color-rule: #262a30;
+    --color-rule-strong: #363b43;
+
+    --color-ink: #f2f0ec;
+    --color-ink-2: #c9c6c0;
+    --color-ink-3: #9aa0a8;
+
+    --color-accent: #f0a06a;
+    --color-accent-soft: #2a1f18;
+
+    --shadow-card: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+  }
+}
+
+:root[data-theme='dark'] {
+  --color-paper: #0e0f12;
+  --color-surface: #16181c;
+  --color-panel: #1b1e23;
+  --color-rule: #262a30;
+  --color-rule-strong: #363b43;
+
+  --color-ink: #f2f0ec;
+  --color-ink-2: #c9c6c0;
+  --color-ink-3: #9aa0a8;
+
+  --color-accent: #f0a06a;
+  --color-accent-soft: #2a1f18;
+
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Sticky headings should not land under the top of the viewport. */
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  ::selection {
+    background: var(--color-accent-soft);
+    color: var(--color-ink);
+  }
+}
+
+@layer components {
+  .rule {
+    border-color: var(--color-rule);
+  }
+
+  .lift {
+    transition:
+      transform 220ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 220ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 220ms ease;
+  }
+
+  .lift:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card);
+    border-color: var(--color-rule-strong);
+  }
+
+  /* Sections fade up as they enter. Purely decorative; disabled below for
+     anyone who has asked for reduced motion, and never applied when printing. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+      opacity 520ms cubic-bezier(0.22, 1, 0.36, 1),
+      transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal[data-visible='true'] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Printing produces a clean, ink-frugal CV: Cmd/Ctrl+P then "Save as PDF". */
+@media print {
+  :root {
+    --color-paper: #ffffff;
+    --color-surface: #ffffff;
+    --color-panel: #ffffff;
+    --color-rule: #c8c8c8;
+    --color-ink: #000000;
+    --color-ink-2: #1a1a1a;
+    --color-ink-3: #444444;
+    --color-accent: #000000;
+  }
+
+  @page {
+    margin: 14mm 12mm;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 9px;
+    color: #555;
+    word-break: break-all;
+  }
+
+  .avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  body {
+    font-size: 10.5pt;
+  }
+}

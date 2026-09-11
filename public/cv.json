@@ -1,6 +1,6 @@
 {
   "$comment": "Generated from src/data/cv.ts — do not edit by hand.",
-  "generatedAt": "2026-09-10",
+  "generatedAt": "2026-09-11",
   "name": "Sayam Ajmal",
   "headline": "Front-end and full-stack developer building AI-assisted products",
   "location": "Manchester, UK",
@@ -130,6 +130,19 @@
         "Supabase",
         "PostgreSQL",
         "RLS"
+      ]
+    },
+    {
+      "name": "SetoffIQ",
+      "blurb": "Airport pickup and drop-off planner for Manchester. Works back from the flight to the moment to leave home, using live aircraft positions, routing, weather and aerodrome observations. Costs nothing to run: a scheduled GitHub Action publishes the data a browser cannot fetch directly, no credential reaches the browser, and every assumption is labelled as one.",
+      "href": "https://sayamdev.github.io/setoffiq/",
+      "repo": "https://github.com/SayamDev/setoffiq",
+      "tags": [
+        "React",
+        "TypeScript",
+        "GitHub Actions",
+        "Open data",
+        "PWA"
       ]
     },
     {

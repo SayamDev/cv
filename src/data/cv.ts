@@ -164,6 +164,14 @@ export const cv: CV = {
       tags: ['React Native', 'Expo', 'Supabase', 'PostgreSQL', 'RLS'],
     },
     {
+      name: 'SetoffIQ',
+      blurb:
+        'Airport pickup and drop-off planner for Manchester. Works back from the flight to the moment to leave home, using live aircraft positions, routing, weather and aerodrome observations. Costs nothing to run: a scheduled GitHub Action publishes the data a browser cannot fetch directly, no credential reaches the browser, and every assumption is labelled as one.',
+      href: 'https://sayamdev.github.io/setoffiq/',
+      repo: 'https://github.com/SayamDev/setoffiq',
+      tags: ['React', 'TypeScript', 'GitHub Actions', 'Open data', 'PWA'],
+    },
+    {
       name: 'ATC Aptitude Drills',
       blurb:
         'Free, open practice for the aptitude tests used to select trainee air traffic controllers. Explains the format, teaches a method and shows where marks are being lost. Runs entirely in the browser.',

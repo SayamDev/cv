@@ -164,6 +164,14 @@ export const cv: CV = {
       tags: ['React Native', 'Expo', 'Supabase', 'PostgreSQL', 'RLS'],
     },
     {
+      name: 'Bubiqo',
+      blurb:
+        'Privacy-first browser extension that reads the page you are on and tells you what it actually says. On a job advert: the pay, the closing date, and the conditions buried three-quarters of the way down — each quoted from the advert, each labelled as stated by the site or read from the prose. It never tells you that you cannot apply: an advert asking for a DBS check says nothing about whether you hold one. No host permissions at install, no content scripts, one network call in the whole codebase, and no model — the analysis is deterministic, so 477 tests can pin it.',
+      href: 'https://github.com/SayamDev/bubiqo',
+      repo: 'https://github.com/SayamDev/bubiqo',
+      tags: ['TypeScript', 'Chrome MV3', 'React', 'Privacy-first', 'Vitest'],
+    },
+    {
       name: 'SetoffIQ',
       blurb:
         'Airport pickup and drop-off planner for Manchester. Works back from the flight to the moment to leave home, using live aircraft positions, routing, weather and aerodrome observations. Costs nothing to run: a scheduled GitHub Action publishes the data a browser cannot fetch directly, no credential reaches the browser, and every assumption is labelled as one.',

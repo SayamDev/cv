@@ -148,11 +148,11 @@ export const cv: CV = {
   ],
   projects: [
     {
-      name: 'Relay',
+      name: 'Revamp',
       blurb:
         'Inbound enquiries, triaged before anyone opens them. It works out how urgent each one is and what it is actually asking for, then opens the task and drafts a reply. Nothing is sent until a person approves it. Every call the model made is logged with its reasoning, so a wrong one can be traced instead of argued about.',
-      href: 'https://sayamdev.github.io/relay/',
-      repo: 'https://github.com/SayamDev/relay',
+      href: 'https://sayamdev.github.io/revamp/',
+      repo: 'https://github.com/SayamDev/revamp',
       tags: ['React', 'TypeScript', 'AI provider abstraction', 'n8n', 'Ollama'],
     },
     {

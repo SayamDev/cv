@@ -134,7 +134,7 @@
     },
     {
       "name": "Bubiqo",
-      "blurb": "A browser extension that reads the page in front of you. On a job advert it finds the pay, the closing date and the conditions buried near the bottom, quoting the advert for every one of them. What it will not do is tell you that you cannot apply: asking for a DBS check says nothing about whether you have one. There is no model in it and nothing leaves the machine, which is why 477 tests can hold the whole thing in place.",
+      "blurb": "A Chrome side panel that pulls the useful parts out of whatever page you have open. Job adverts: pay, closing date, contract, location, the requirements, and any condition the advert sets, each quoted from the text. Emails: the deadline, what was asked of you, what you promised. Invoices: supplier, total, reference, due date. It then offers to save it, copy it, set a reminder or make a calendar file, and it never sends, submits or pays. Nothing leaves the device and there is no model in it, which is how 477 tests hold the behaviour in place.",
       "href": "https://github.com/SayamDev/bubiqo",
       "repo": "https://github.com/SayamDev/bubiqo",
       "tags": [

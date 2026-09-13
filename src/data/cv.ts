@@ -150,7 +150,7 @@ export const cv: CV = {
     {
       name: 'Relay',
       blurb:
-        'AI business operations assistant. Classifies inbound enquiries, sets priority and response windows, extracts commercial detail, opens tasks and drafts replies — then waits for a human to approve. Every AI decision is written to an audit trail.',
+        'Inbound enquiries, triaged before anyone opens them. It works out how urgent each one is and what it is actually asking for, then opens the task and drafts a reply. Nothing is sent until a person approves it. Every call the model made is logged with its reasoning, so a wrong one can be traced instead of argued about.',
       href: 'https://sayamdev.github.io/relay/',
       repo: 'https://github.com/SayamDev/relay',
       tags: ['React', 'TypeScript', 'AI provider abstraction', 'n8n', 'Ollama'],
@@ -158,7 +158,7 @@ export const cv: CV = {
     {
       name: 'TurfXI',
       blurb:
-        'Offline-first app for running a Sunday-league football team — fixtures, live match events, player ratings and subs collection. Found and closed a privilege-escalation hole in the database policy, then wrote a two-user test proving it stays closed.',
+        'Running a Sunday-league side from your phone, including on pitches with no signal. Fixtures, live match events, player ratings, who still owes subs. While building it I found a hole in the database policy that let one manager read another team’s data. The fix is held in place by a test that signs in as two users and proves the door stays shut.',
       href: 'https://sayamdev.github.io/turfxi-demo/',
       repo: 'https://github.com/SayamDev/turfxi-demo',
       tags: ['React Native', 'Expo', 'Supabase', 'PostgreSQL', 'RLS'],
@@ -166,7 +166,7 @@ export const cv: CV = {
     {
       name: 'Bubiqo',
       blurb:
-        'Privacy-first browser extension that reads the page you are on and tells you what it actually says. On a job advert: the pay, the closing date, and the conditions buried three-quarters of the way down — each quoted from the advert, each labelled as stated by the site or read from the prose. It never tells you that you cannot apply: an advert asking for a DBS check says nothing about whether you hold one. No host permissions at install, no content scripts, one network call in the whole codebase, and no model — the analysis is deterministic, so 477 tests can pin it.',
+        'A browser extension that reads the page in front of you. On a job advert it finds the pay, the closing date and the conditions buried near the bottom, quoting the advert for every one of them. What it will not do is tell you that you cannot apply: asking for a DBS check says nothing about whether you have one. There is no model in it and nothing leaves the machine, which is why 477 tests can hold the whole thing in place.',
       href: 'https://github.com/SayamDev/bubiqo',
       repo: 'https://github.com/SayamDev/bubiqo',
       tags: ['TypeScript', 'Chrome MV3', 'React', 'Privacy-first', 'Vitest'],
@@ -174,7 +174,7 @@ export const cv: CV = {
     {
       name: 'SetoffIQ',
       blurb:
-        'Airport pickup and drop-off planner for Manchester. Works back from the flight to the moment to leave home, using live aircraft positions, routing, weather and aerodrome observations. Costs nothing to run: a scheduled GitHub Action publishes the data a browser cannot fetch directly, no credential reaches the browser, and every assumption is labelled as one.',
+        'Tells you when to leave the house for a Manchester airport run. It works backwards from the flight, using where the aircraft actually is, how the roads are moving and what the airfield is reporting overhead. Hosting costs nothing. A scheduled GitHub Action fetches what a browser is not allowed to, so no key is ever shipped to the page, and anything the planner had to assume is labelled as an assumption.',
       href: 'https://sayamdev.github.io/setoffiq/',
       repo: 'https://github.com/SayamDev/setoffiq',
       tags: ['React', 'TypeScript', 'GitHub Actions', 'Open data', 'PWA'],
@@ -182,7 +182,7 @@ export const cv: CV = {
     {
       name: 'ATC Aptitude Drills',
       blurb:
-        'Free, open practice for the aptitude tests used to select trainee air traffic controllers. Explains the format, teaches a method and shows where marks are being lost. Runs entirely in the browser.',
+        'Free practice for the aptitude tests that select trainee air traffic controllers. It explains what each test is really measuring, teaches a method for it, and shows you afterwards where the marks went. No account, no server, nothing stored.',
       href: 'https://github.com/SayamDev/atc-aptitude-drills',
       tags: ['TypeScript', 'React', 'Open source'],
     },

@@ -34,7 +34,31 @@ function useActiveSection() {
       const node = document.getElementById(section.id)
       if (node) observer.observe(node)
     }
-    return () => observer.disconnect()
+
+    /*
+     * The last section never lit up.
+     *
+     * The observer's detection band sits between 20% and 30% down the viewport.
+     * Education is the final section and the page stops scrolling before its top
+     * ever reaches that band, so nothing was marked active and the indicator
+     * stayed on Skills however far you scrolled.
+     *
+     * At the bottom of the page, the last section is the one being read. That is
+     * true whatever its height, so it is checked directly rather than by widening
+     * the band and hoping.
+     */
+    const onScroll = () => {
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2
+      if (atBottom) setActive(SECTIONS[SECTIONS.length - 1].id)
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    onScroll()
+
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('scroll', onScroll)
+    }
   }, [])
 
   return active

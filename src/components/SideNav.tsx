@@ -20,8 +20,19 @@ function useActiveSection() {
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') return
 
+    /*
+     * At the bottom of the page the last section is the one being read, whatever
+     * the observer thinks. The observer fires on the same scroll events, so this
+     * has to win rather than race: while the page is scrolled to the end, its
+     * answers are ignored.
+     */
+    const atBottom = () =>
+      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2
+
     const observer = new IntersectionObserver(
       (entries) => {
+        if (atBottom()) return
+
         const visible = entries
           .filter((entry) => entry.isIntersecting)
           .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0]
@@ -40,16 +51,11 @@ function useActiveSection() {
      *
      * The observer's detection band sits between 20% and 30% down the viewport.
      * Education is the final section and the page stops scrolling before its top
-     * ever reaches that band, so nothing was marked active and the indicator
-     * stayed on Skills however far you scrolled.
-     *
-     * At the bottom of the page, the last section is the one being read. That is
-     * true whatever its height, so it is checked directly rather than by widening
-     * the band and hoping.
+     * ever reaches that band, so nothing marked it active and the indicator stayed
+     * on whichever section was still in the band — Projects, three screens back.
      */
     const onScroll = () => {
-      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2
-      if (atBottom) setActive(SECTIONS[SECTIONS.length - 1].id)
+      if (atBottom()) setActive(SECTIONS[SECTIONS.length - 1].id)
     }
 
     window.addEventListener('scroll', onScroll, { passive: true })

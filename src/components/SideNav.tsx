@@ -13,57 +13,60 @@ const SECTIONS = [
 const THEME_ICON = { system: Monitor, dark: Moon, light: Sun }
 const THEME_LABEL = { system: 'System theme', dark: 'Dark theme', light: 'Light theme' }
 
-/** Highlights whichever section is currently in view. */
+/**
+ * Highlights whichever section is currently in view.
+ *
+ * Worked out directly from the sections' positions on every scroll, rather than
+ * with an IntersectionObserver. The observer only fires when a section crosses
+ * its band, and two bugs came out of that: the final section never lit up,
+ * because the page stops scrolling before its top ever reaches the band; and
+ * once that was patched by ignoring the observer at the bottom of the page,
+ * scrolling back up lit nothing, because no crossing occurred to report.
+ *
+ * Five sections, one rectangle each, on a frame-throttled scroll. Cheap enough
+ * to be worth the certainty.
+ */
 function useActiveSection() {
   const [active, setActive] = useState(SECTIONS[0].id)
 
   useEffect(() => {
-    if (typeof IntersectionObserver === 'undefined') return
+    let frame = 0
 
-    /*
-     * At the bottom of the page the last section is the one being read, whatever
-     * the observer thinks. The observer fires on the same scroll events, so this
-     * has to win rather than race: while the page is scrolled to the end, its
-     * answers are ignored.
-     */
-    const atBottom = () =>
-      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2
+    const measure = () => {
+      frame = 0
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (atBottom()) return
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2
+      if (atBottom) {
+        setActive(SECTIONS[SECTIONS.length - 1].id)
+        return
+      }
 
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0]
-        if (visible) setActive(visible.target.id)
-      },
-      { rootMargin: '-20% 0px -70% 0px', threshold: 0 },
-    )
+      // The line the reader's eye is on, a quarter of the way down the viewport.
+      const line = window.innerHeight * 0.25
 
-    for (const section of SECTIONS) {
-      const node = document.getElementById(section.id)
-      if (node) observer.observe(node)
+      let current = SECTIONS[0].id
+      for (const section of SECTIONS) {
+        const node = document.getElementById(section.id)
+        if (!node) continue
+        if (node.getBoundingClientRect().top <= line) current = section.id
+      }
+      setActive(current)
     }
 
-    /*
-     * The last section never lit up.
-     *
-     * The observer's detection band sits between 20% and 30% down the viewport.
-     * Education is the final section and the page stops scrolling before its top
-     * ever reaches that band, so nothing marked it active and the indicator stayed
-     * on whichever section was still in the band — Projects, three screens back.
-     */
     const onScroll = () => {
-      if (atBottom()) setActive(SECTIONS[SECTIONS.length - 1].id)
+      if (frame) return
+      frame = requestAnimationFrame(measure)
     }
 
     window.addEventListener('scroll', onScroll, { passive: true })
-    onScroll()
+    window.addEventListener('resize', onScroll)
+    measure()
 
     return () => {
-      observer.disconnect()
+      if (frame) cancelAnimationFrame(frame)
       window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
     }
   }, [])
 

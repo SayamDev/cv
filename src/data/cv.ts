@@ -150,7 +150,7 @@ export const cv: CV = {
     {
       name: 'ORUK Navigator',
       blurb:
-        'Tameside Council publishes its support services as web pages, so anyone who wants that information as data types it out again. This reads a reviewed set of those pages, keeps the evidence behind every fact, makes a person approve anything that goes public, and republishes the result as an Open Referral UK v3 feed — which passes the standard’s own validator. A C# tool alongside it reports how usable any ORUK feed is; run against two live council feeds it found records that had not been checked in over a year and a profile URL still set to the placeholder from the docs.',
+        'Ask for help in Tameside and the answer is spread across council pages you would have to know to look for. Navigator lets you describe what is wrong in your own words, shows what might help and why it matched, and links to the council’s own page so you can check it yourself. It also publishes those services in the standard format councils use to share data, so nobody has to copy them out by hand.',
       href: 'https://oruk-navigator.vercel.app',
       repo: 'https://github.com/SayamDev/ORUK-Navigator',
       tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'C#', '.NET', 'Open Referral UK'],

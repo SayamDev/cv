@@ -12,12 +12,16 @@ export function Projects({ projects }: { projects: Project[] }) {
         >
           <div className="flex items-start justify-between gap-3">
             <h3 className="font-display text-[20px] leading-tight font-medium tracking-[-0.01em] text-ink">
-              <ExternalLink
-                href={project.href}
-                className="underline decoration-rule-strong underline-offset-[6px] transition-colors hover:text-accent hover:decoration-accent"
-              >
-                {project.name}
-              </ExternalLink>
+              {project.href ? (
+                <ExternalLink
+                  href={project.href}
+                  className="underline decoration-rule-strong underline-offset-[6px] transition-colors hover:text-accent hover:decoration-accent"
+                >
+                  {project.name}
+                </ExternalLink>
+              ) : (
+                project.name
+              )}
             </h3>
             <div className="no-print flex shrink-0 gap-1">
               {project.repo && (
@@ -29,13 +33,15 @@ export function Projects({ projects }: { projects: Project[] }) {
                   <Code2 aria-hidden className="size-4" />
                 </ExternalLink>
               )}
-              <ExternalLink
-                href={project.href}
-                label={`Open ${project.name}`}
-                className="rounded-md p-1.5 text-ink-3 transition-colors hover:bg-panel hover:text-accent"
-              >
-                <ArrowUpRight aria-hidden className="size-4" />
-              </ExternalLink>
+              {project.href && (
+                <ExternalLink
+                  href={project.href}
+                  label={`Open ${project.name}`}
+                  className="rounded-md p-1.5 text-ink-3 transition-colors hover:bg-panel hover:text-accent"
+                >
+                  <ArrowUpRight aria-hidden className="size-4" />
+                </ExternalLink>
+              )}
             </div>
           </div>
 

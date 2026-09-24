@@ -32,7 +32,8 @@ export interface SkillGroup {
 export interface Project {
   name: string
   blurb: string
-  href: string
+  /** Live link. Leave out while a project isn't public yet. */
+  href?: string
   repo?: string
   tags: string[]
 }
@@ -154,6 +155,12 @@ export const cv: CV = {
       href: 'https://oruk-navigator.vercel.app',
       repo: 'https://github.com/SayamDev/ORUK-Navigator',
       tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'C#', '.NET', 'Open Referral UK'],
+    },
+    {
+      name: 'Rehearse',
+      blurb:
+        'Interview practice for people who never get coached: school leavers, career changers, anyone with a gap or a record they are dreading being asked about. You answer out loud, get a score and one thing to fix, then take it again and watch the number move. There is a hands-free mode where the interviewer listens, reacts to what you said and asks a follow-up, and guides for the hard parts, like how to talk about a conviction honestly. It costs nothing to run. The notes come from a free AI tier, the voice runs in the visitor’s browser, and when the free allowance runs out it switches to built-in notes instead of a paywall.',
+      tags: ['Next.js', 'TypeScript', 'Groq', 'Web Speech API', 'PWA'],
     },
     {
       name: 'Revamp',

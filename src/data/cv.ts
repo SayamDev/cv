@@ -164,6 +164,13 @@ export const cv: CV = {
       tags: ['Next.js', 'TypeScript', 'Groq', 'Web Speech API', 'PWA'],
     },
     {
+      name: 'Rehearse Courage',
+      blurb:
+        'Rehearse’s sister app, for anyone of any age who finds it hard to speak up: answering in class, joining friends, giving a talk, ordering food or making a phone call. Every moment climbs six small steps, from thinking it to doing it for real, with calm-down tools, warm-up games, a tiny real-life dare each day and a journey page to be proud of. It rewards trying and never scores fluency, pauses or stutters. It is free, has no accounts and keeps everything on the device. Under 13s never touch generative AI, and anything typed is checked on the device for signs someone needs support.',
+      href: 'https://rehearse-courage.sayamdev.workers.dev',
+      tags: ['Next.js', 'TypeScript', 'Cloudflare Workers', 'On-device AI', 'WCAG 2.2 AA'],
+    },
+    {
       name: 'Revamp',
       blurb:
         'Inbound enquiries, triaged before anyone opens them. It works out how urgent each one is and what it is actually asking for, then opens the task and drafts a reply. Nothing is sent until a person approves it. Every call the model made is logged with its reasoning, so a wrong one can be traced instead of argued about.',

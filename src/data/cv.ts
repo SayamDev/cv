@@ -168,6 +168,7 @@ export const cv: CV = {
       blurb:
         'Rehearse’s sister app, for anyone of any age who finds it hard to speak up: answering in class, joining friends, giving a talk, ordering food or making a phone call. Every moment climbs six small steps, from thinking it to doing it for real, with calm-down tools, warm-up games, a tiny real-life dare each day and a journey page to be proud of. It rewards trying and never scores fluency, pauses or stutters. It is free, has no accounts and keeps everything on the device. Under 13s never touch generative AI, and anything typed is checked on the device for signs someone needs support.',
       href: 'https://rehearse-courage.sayamdev.workers.dev',
+      repo: 'https://github.com/SayamDev/rehearse-courage',
       tags: ['Next.js', 'TypeScript', 'Cloudflare Workers', 'On-device AI', 'WCAG 2.2 AA'],
     },
     {

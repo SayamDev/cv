@@ -149,6 +149,14 @@ export const cv: CV = {
   ],
   projects: [
     {
+      name: 'Focus & Snuggery',
+      blurb:
+        'A calm place to turn a full head into one manageable action. Write or dictate a note, review the small steps, then focus on one task with an optional gentle or Pomodoro timer. Tasks and check-ins stay in the browser; optional natural read-aloud and speech recognition run on the device. Built with keyboard access, adjustable text, sensory themes and reduced motion, with rule-based suggestions available without AI.',
+      href: 'https://sayamdev.github.io/focus-and-snuggery/',
+      repo: 'https://github.com/SayamDev/focus-and-snuggery',
+      tags: ['React', 'TypeScript', 'Dexie', 'On-device AI', 'Playwright', 'PWA'],
+    },
+    {
       name: 'ORUK Navigator',
       blurb:
         'Ask for help in Tameside and the answer is spread across council pages you would have to know to look for. Navigator lets you describe what is wrong in your own words, shows what might help and why it matched, and links to the council’s own page so you can check it yourself. It also publishes those services in the standard format councils use to share data, so nobody has to copy them out by hand.',

@@ -107,6 +107,19 @@
   ],
   "projects": [
     {
+      "name": "Latest Cookie",
+      "blurb": "A free technology reading and discovery app with daily publisher headlines, selected tech videos and a source-linked model comparison lab. Built the scheduled ingestion pipeline with validated feeds, visible freshness and last-good fallbacks; added benchmark filters, charts, CSV export and browser-local bookmarks. Capability scores, popularity and API pricing remain separate so readers can see what each comparison actually means.",
+      "href": "https://sayamdev.github.io/latest-cookie/",
+      "repo": "https://github.com/SayamDev/latest-cookie",
+      "tags": [
+        "React",
+        "TypeScript",
+        "GitHub Actions",
+        "Zod",
+        "Playwright"
+      ]
+    },
+    {
       "name": "Focus & Snuggery",
       "blurb": "A calm place to turn a full head into one manageable action. Write or dictate a note, review the small steps, then focus on one task with an optional gentle or Pomodoro timer. Tasks and check-ins stay in the browser; optional natural read-aloud and speech recognition run on the device. Built with keyboard access, adjustable text, sensory themes and reduced motion, with rule-based suggestions available without AI.",
       "href": "https://sayamdev.github.io/focus-and-snuggery/",

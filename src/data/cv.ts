@@ -149,6 +149,14 @@ export const cv: CV = {
   ],
   projects: [
     {
+      name: 'Hudl N Game',
+      blurb:
+        'Built a phone-first party-game PWA with five game modes on one shared device. Designed distinct game worlds, an interactive first-run guide and private hold-to-reveal controls that hide secrets on release or focus loss. Added offline custom packs, local scoring and history-aware selection to reduce repeat words and roles. An optional server-side AI adapter validates themed drafts for human review; the public demo works without AI or accounts.',
+      href: 'https://sayamdev.github.io/hudl-n-game/',
+      repo: 'https://github.com/SayamDev/hudl-n-game',
+      tags: ['React', 'TypeScript', 'Zustand', 'PWA', 'Playwright'],
+    },
+    {
       name: 'Latest Cookie',
       blurb:
         'A free technology reading and discovery app with daily publisher headlines, selected tech videos and a source-linked model comparison lab. Built the scheduled ingestion pipeline with validated feeds, visible freshness and last-good fallbacks; added benchmark filters, charts, CSV export and browser-local bookmarks. Capability scores, popularity and API pricing remain separate so readers can see what each comparison actually means.',

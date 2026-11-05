@@ -149,6 +149,13 @@ export const cv: CV = {
   ],
   projects: [
     {
+      name: 'Context Desk',
+      blurb:
+        'Built for the Meta AI Developer Hackathon, Context Desk is an open-source local video studio for finding story moments, reviewing multilingual subtitles and making editable clips. It uses Meta Muse Voice for transcription and Muse Spark to assess sampled frames and transcripts, with source evidence and editable drafts for human review.',
+      repo: 'https://github.com/SayamDev/context-desk',
+      tags: ['Node.js', 'JavaScript', 'SQLite', 'FFmpeg', 'Meta Muse'],
+    },
+    {
       name: 'Hudl N Game',
       blurb:
         'Built a phone-first party-game PWA with five game modes on one shared device. Designed distinct game worlds, an interactive first-run guide and private hold-to-reveal controls that hide secrets on release or focus loss. Added offline custom packs, local scoring and history-aware selection to reduce repeat words and roles. An optional server-side AI adapter validates themed drafts for human review; the public demo works without AI or accounts.',

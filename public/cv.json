@@ -1,6 +1,6 @@
 {
   "$comment": "Generated from src/data/cv.ts — do not edit by hand.",
-  "generatedAt": "2026-10-09",
+  "generatedAt": "2026-11-17",
   "name": "Sayam Ajmal",
   "headline": "Front-end and full-stack developer building AI-assisted products",
   "location": "Manchester, UK",
@@ -106,6 +106,30 @@
     }
   ],
   "projects": [
+    {
+      "name": "SixRadar",
+      "blurb": "Designed, built and run SixRadar, an independent GTA 6 news, tools and community site, live on its own domain for launch week. Live news and video from every major platform, sourced answers, an interactive map, a launch live blog, a daily quiz with a world leaderboard and opt-in browser news alerts. A sourcing rule is enforced in code: nothing is published without an official source or two independent sites that agree. Runs on Cloudflare Workers with D1 and KV, deploys on every push and scores 100 on Lighthouse accessibility. Source code is private.",
+      "href": "https://sixradar.com",
+      "tags": [
+        "Astro",
+        "TypeScript",
+        "Cloudflare Workers",
+        "D1",
+        "Web Push"
+      ]
+    },
+    {
+      "name": "Context Desk",
+      "blurb": "Built for the Meta AI Developer Hackathon, Context Desk is an open-source local video studio for finding story moments, reviewing multilingual subtitles and making editable clips. It uses Meta Muse Voice for transcription and Muse Spark to assess sampled frames and transcripts, with source evidence and editable drafts for human review.",
+      "repo": "https://github.com/SayamDev/context-desk",
+      "tags": [
+        "Node.js",
+        "JavaScript",
+        "SQLite",
+        "FFmpeg",
+        "Meta Muse"
+      ]
+    },
     {
       "name": "Hudl N Game",
       "blurb": "Built a phone-first party-game PWA with five game modes on one shared device. Designed distinct game worlds, an interactive first-run guide and private hold-to-reveal controls that hide secrets on release or focus loss. Added offline custom packs, local scoring and history-aware selection to reduce repeat words and roles. An optional server-side AI adapter validates themed drafts for human review; the public demo works without AI or accounts.",

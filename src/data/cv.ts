@@ -149,6 +149,13 @@ export const cv: CV = {
   ],
   projects: [
     {
+      name: 'SixRadar',
+      blurb:
+        'Designed, built and run SixRadar, an independent GTA 6 news, tools and community site, live on its own domain for launch week. Live news and video from every major platform, sourced answers, an interactive map, a launch live blog, a daily quiz with a world leaderboard and opt-in browser news alerts. A sourcing rule is enforced in code: nothing is published without an official source or two independent sites that agree. Runs on Cloudflare Workers with D1 and KV, deploys on every push and scores 100 on Lighthouse accessibility. Source code is private.',
+      href: 'https://sixradar.com',
+      tags: ['Astro', 'TypeScript', 'Cloudflare Workers', 'D1', 'Web Push'],
+    },
+    {
       name: 'Context Desk',
       blurb:
         'Built for the Meta AI Developer Hackathon, Context Desk is an open-source local video studio for finding story moments, reviewing multilingual subtitles and making editable clips. It uses Meta Muse Voice for transcription and Muse Spark to assess sampled frames and transcripts, with source evidence and editable drafts for human review.',

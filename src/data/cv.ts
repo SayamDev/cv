@@ -155,8 +155,7 @@ export const cv: CV = {
     {
       name: 'Context Desk',
       blurb:
-        'Built for the Meta AI Developer Hackathon: an open-source clip studio that finds the real story moments in long recordings and live streams, then makes subtitled clips in 25 languages, with voice-cloned dubs. Meta Muse Voice transcribes and Muse Spark suggests story cuts, with the source evidence beside every suggestion so an editor checks each caption and cut before export.',
-      repo: 'https://github.com/SayamDev/context-desk',
+        'Built and submitted to the Meta AI Developer Hackathon: a clip studio that finds the real story moments in long recordings and live streams, then makes subtitled clips in 25 languages, with voice-cloned dubs. Meta Muse Voice transcribes and Muse Spark suggests story cuts, with the source evidence beside every suggestion so an editor checks each caption and cut before export. After the hackathon I took it private, and it now runs my own live clipping.',
       href: 'https://x.com/Sayam_Ajmal/status/2118146228328534245',
       tags: ['Meta Muse', 'Node.js', 'SQLite', 'FFmpeg', '25 languages'],
     },

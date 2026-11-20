@@ -7,6 +7,10 @@
   "email": "asfcit15sayamajmal@gmail.com",
   "links": [
     {
+      "label": "Portfolio",
+      "href": "https://sayamdev.github.io/portfolio/"
+    },
+    {
       "label": "LinkedIn",
       "href": "https://linkedin.com/in/sayam-ajmal"
     },

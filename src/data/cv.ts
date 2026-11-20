@@ -67,6 +67,7 @@ export const cv: CV = {
   location: 'Manchester, UK · open to remote',
   email: 'asfcit15sayamajmal@gmail.com',
   links: [
+    { label: 'Portfolio', href: 'https://sayamdev.github.io/portfolio/' },
     { label: 'LinkedIn', href: 'https://linkedin.com/in/sayam-ajmal' },
     { label: 'GitHub', href: 'https://github.com/SayamDev' },
     { label: 'X', href: 'https://x.com/Sayam_Ajmal' },

@@ -1,25 +1,25 @@
-@import '@fontsource-variable/inter';
-@import '@fontsource-variable/newsreader';
+@import '@fontsource-variable/bricolage-grotesque';
+@import '@fontsource-variable/hanken-grotesk';
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-display: 'Newsreader Variable', ui-serif, Georgia, serif;
+  --font-sans: 'Hanken Grotesk Variable', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: 'Bricolage Grotesque Variable', 'Avenir Next', ui-sans-serif, system-ui, sans-serif;
 
-  /* Warm paper, near-black ink, one burnt-orange accent. Every text colour
-     below clears WCAG AA (4.5:1) on the ground it is used against. */
-  --color-paper: #faf9f7;
+  /* Cool paper, near-black ink, one cobalt accent (matches the portfolio).
+     Every text colour below clears WCAG AA (4.5:1) on its ground. */
+  --color-paper: #f5f6f8;
   --color-surface: #ffffff;
-  --color-panel: #f2efe9;
-  --color-rule: #e4e0d8;
-  --color-rule-strong: #d3cec3;
+  --color-panel: #eceefe;
+  --color-rule: #dfe2e9;
+  --color-rule-strong: #c9cdd8;
 
-  --color-ink: #14161a;      /* 17.2:1 */
-  --color-ink-2: #3a3f47;    /* 10.1:1 */
-  --color-ink-3: #5c626c;    /*  5.8:1 */
+  --color-ink: #12141b;      /* 18:1 */
+  --color-ink-2: #383d4a;    /* 10:1 */
+  --color-ink-3: #585e6e;    /*  6.3:1 */
 
-  --color-accent: #a8460c;   /*  5.6:1 */
-  --color-accent-soft: #f7ece3;
+  --color-accent: #3046ff;   /*  5.9:1 */
+  --color-accent-soft: #e3e7ff;
 
   --radius-card: 12px;
   --shadow-card: 0 1px 2px rgb(20 22 26 / 0.04), 0 8px 24px -12px rgb(20 22 26 / 0.12);
@@ -28,36 +28,36 @@
 /* The toggle sets data-theme; with no choice made we follow the system. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --color-paper: #0e0f12;
-    --color-surface: #16181c;
-    --color-panel: #1b1e23;
-    --color-rule: #262a30;
-    --color-rule-strong: #363b43;
+    --color-paper: #0d0f15;
+    --color-surface: #151821;
+    --color-panel: #1d2133;
+    --color-rule: #262a36;
+    --color-rule-strong: #363b4b;
 
-    --color-ink: #f2f0ec;
-    --color-ink-2: #c9c6c0;
-    --color-ink-3: #9aa0a8;
+    --color-ink: #eef0f6;
+    --color-ink-2: #c8ccd8;
+    --color-ink-3: #9aa1b3;
 
-    --color-accent: #f0a06a;
-    --color-accent-soft: #2a1f18;
+    --color-accent: #8a98ff;
+    --color-accent-soft: #1d2240;
 
     --shadow-card: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px -12px rgb(0 0 0 / 0.6);
   }
 }
 
 :root[data-theme='dark'] {
-  --color-paper: #0e0f12;
-  --color-surface: #16181c;
-  --color-panel: #1b1e23;
-  --color-rule: #262a30;
-  --color-rule-strong: #363b43;
+  --color-paper: #0d0f15;
+  --color-surface: #151821;
+  --color-panel: #1d2133;
+  --color-rule: #262a36;
+  --color-rule-strong: #363b4b;
 
-  --color-ink: #f2f0ec;
-  --color-ink-2: #c9c6c0;
-  --color-ink-3: #9aa0a8;
+  --color-ink: #eef0f6;
+  --color-ink-2: #c8ccd8;
+  --color-ink-3: #9aa1b3;
 
-  --color-accent: #f0a06a;
-  --color-accent-soft: #2a1f18;
+  --color-accent: #8a98ff;
+  --color-accent-soft: #1d2240;
 
   --shadow-card: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px -12px rgb(0 0 0 / 0.6);
 }

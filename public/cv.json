@@ -1,9 +1,9 @@
 {
   "$comment": "Generated from src/data/cv.ts — do not edit by hand.",
-  "generatedAt": "2026-11-17",
+  "generatedAt": "2026-11-20",
   "name": "Sayam Ajmal",
-  "headline": "Front-end and full-stack developer building AI-assisted products",
-  "location": "Manchester, UK",
+  "headline": "Product engineer and content creator: I build voice and AI products, then grow the audience for them",
+  "location": "Manchester, UK · open to remote",
   "email": "asfcit15sayamajmal@gmail.com",
   "links": [
     {
@@ -13,63 +13,77 @@
     {
       "label": "GitHub",
       "href": "https://github.com/SayamDev"
+    },
+    {
+      "label": "X",
+      "href": "https://x.com/Sayam_Ajmal"
     }
   ],
-  "summary": "Technology professional with 4+ years of commercial experience delivering digital projects in large-scale regulated environments, including Tata Consultancy Services and Plusnet, on products serving 800,000+ customers. Experienced across the full delivery lifecycle — requirements and definition through build, test, release and support — working in Agile teams alongside UX, design, content, product and engineering. Has independently taken a product from concept to public release. A strong communicator with the technical background to work credibly with engineering teams, now looking to bring that breadth to technical delivery, development, data or digital transformation roles.",
+  "openTo": [
+    "Product Engineer",
+    "Founding Engineer",
+    "Developer Advocate",
+    "Product Owner",
+    "Content & Growth"
+  ],
+  "summary": "Product engineer in Manchester. Four years shipping customer-facing React and TypeScript at Plusnet and Tata Consultancy Services, on journeys used by more than 800,000 customers. Since May 2026 I have designed, built and launched ten products of my own end to end, including a voice interviewer that listens and asks follow-ups, on-device speech that costs nothing to run, a launch-week GTA 6 hub, and a clip studio built for the Meta AI Developer Hackathon. I also make the content: I started SixRadar’s YouTube and TikTok channels from zero and grew them to 9,700+ views across 42 videos in launch week, choosing moments from the data and reading the analytics to decide what to make next. I care about the parts that decide whether people trust a product: what happens when the AI is wrong, when the signal drops, or when someone goes looking for a hole.",
   "proofPoints": [
     {
-      "value": "4+ yrs",
-      "label": "Commercial delivery"
-    },
-    {
       "value": "800k+",
-      "label": "Customers served by shipped work"
+      "label": "Customers on journeys I built at Plusnet"
     },
     {
-      "value": "30%",
-      "label": "Repetitive dev effort cut with AI workflows"
+      "value": "4+ yrs",
+      "label": "Commercial front-end and full-stack delivery"
     },
     {
-      "value": "5–10%",
-      "label": "Faster customer journey completion"
+      "value": "10",
+      "label": "Live products designed, built and launched in 2026"
+    },
+    {
+      "value": "9,700+",
+      "label": "Video views in GTA 6 launch week, 42 videos"
     }
   ],
   "roles": [
     {
       "company": "Independent",
-      "title": "Full-Stack Mobile Developer",
-      "start": "2026",
+      "title": "Product Engineer",
+      "start": "May 2026",
       "end": "Present",
+      "context": "Designing, building and launching my own AI products",
       "highlights": [
-        "Architected and implemented relational data structures in Supabase and SQL, prioritising data integrity, scalability and query performance.",
-        "Owned the full development lifecycle — design system, UI/UX, business logic and security — using AI tooling (Claude, ChatGPT, Copilot) to accelerate prototyping through to production deployment.",
-        "Engineered cross-platform iOS and Android applications with React Native and Expo, using AI-assisted workflows to shorten delivery timelines."
+        "Designed, built and launched ten live products on Cloudflare Workers, Vercel and Supabase, owning everything from data model and design system to deployment, most running at £0 a month.",
+        "Built voice AI end to end: speech in, an LLM that reacts and asks a follow-up, natural voice out, with on-device text to speech in a Web Worker and three fallback layers.",
+        "Built Context Desk for the Meta AI Developer Hackathon on Meta Muse Voice and Muse Spark: live clipping, story cuts, subtitles in 25 languages and voice-cloned dubs.",
+        "Launched SixRadar for GTA 6 launch week and grew its YouTube and TikTok channels to 9,700+ views across 42 videos, using a capture, clipping and captioning pipeline I built.",
+        "Ran the channels like a growth experiment: a script ranks live-stream moments by chat spikes, then I write the hook, caption it, design the cover and track which formats land (top Short: 2,900 views).",
+        "Found and fixed a cross-tenant data leak in a Supabase row-level security policy, locked in by a test that signs in as two users."
       ]
     },
     {
       "company": "Tata Consultancy Services",
-      "title": "Front-End Developer & AI-Assisted Engineer",
+      "title": "Front-End Developer",
       "start": "Apr 2023",
       "end": "May 2026",
       "context": "Delivering customer-facing products for Plusnet",
       "highlights": [
-        "Built pixel-accurate React and TypeScript interfaces for products serving 800,000+ users, compliant with WCAG 2.1 accessibility standards.",
-        "Implemented and validated GA4 events and data layers, auditing tracking to ensure accurate measurement of customer journeys and conversion.",
-        "Used analytics findings and A/B test data to optimise journeys with UX, design and product, delivering a 5–10% increase in journey completion speed.",
-        "Introduced AI-assisted workflows (Claude, GitHub Copilot, Amazon Q) to automate boilerplate and test generation, cutting repetitive development effort by 30%.",
-        "Translated business requirements and user stories into production solutions, integrating enterprise REST APIs across Git, Jenkins CI/CD and Azure DevOps.",
-        "Communicated technical outcomes to senior stakeholders, led stand-ups, mentored junior engineers and held standards through peer code review."
+        "Built accessible React and TypeScript interfaces for products serving 800,000+ customers, to WCAG 2.1 AA.",
+        "Implemented and audited GA4 events and data layers so customer journeys and conversion were measured accurately.",
+        "Used analytics and A/B test results with UX, design and product to make key journeys 5–10% faster to complete.",
+        "Introduced AI-assisted workflows (Claude, GitHub Copilot, Amazon Q) for boilerplate and test generation, cutting repetitive development effort by about 30%.",
+        "Turned requirements and user stories into production features across enterprise REST APIs, Jenkins CI/CD and Azure DevOps.",
+        "Presented technical outcomes to senior stakeholders, led stand-ups, mentored junior engineers and reviewed code."
       ]
     },
     {
       "company": "Etsy",
-      "title": "E-Commerce Entrepreneur",
+      "title": "Founder, digital product store",
       "start": "Nov 2025",
       "end": "Feb 2026",
-      "context": "Self-employed",
+      "context": "Alongside TCS",
       "highlights": [
-        "Operated a digital product store, using Etsy and Facebook analytics to track sales performance and inform marketing decisions.",
-        "Managed paid advertising across Facebook and Etsy and produced promotional content for TikTok and Instagram, measuring results and adjusting spend accordingly."
+        "Ran the store end to end: products, paid ads on Facebook and Etsy, and promo content on TikTok and Instagram, adjusting spend from the sales data."
       ]
     },
     {
@@ -78,9 +92,8 @@
       "start": "Sep 2022",
       "end": "Apr 2023",
       "highlights": [
-        "Built and tested production interfaces across billing, upgrade and renewal journeys using React, JavaScript, HTML, CSS and SQL, with Jest unit tests, in an Agile team alongside UX, content and product.",
-        "Designed and ran weekly team surveys capturing what went well, what people enjoyed and what concerned them, feeding results into retrospectives and ways-of-working improvements.",
-        "Took part in daily stand-ups and regular pair programming, maintaining code quality and sharing knowledge across the team."
+        "Built and tested billing, upgrade and renewal journeys in React, JavaScript and SQL with Jest, in an Agile team with UX, content and product.",
+        "Ran weekly team surveys that fed retrospectives and ways-of-working changes."
       ]
     },
     {
@@ -89,9 +102,7 @@
       "start": "Aug 2021",
       "end": "Feb 2022",
       "highlights": [
-        "Built Power BI reports and visualisations giving stakeholders visibility of business data to support decision making.",
-        "Developed CRM solutions involving relational data models, workflow automation and structured business processes.",
-        "Analysed business requirements and translated them into practical technical solutions, maintaining testing processes and audit trails in Azure DevOps."
+        "Built CRM workflows, relational data models and Power BI reports that gave stakeholders a clear view of business data."
       ]
     },
     {
@@ -100,175 +111,150 @@
       "start": "",
       "end": "Earlier",
       "highlights": [
-        "Student Software Developer at CodeNation — full-stack development with React, Node.js, Express.js and MongoDB.",
-        "IT internships at BBC MediaCity, Higher Openshaw Community School and Hyde High School — 1st-line support, hardware maintenance, component upgrades and OS deployments."
+        "Student Software Developer at CodeNation (React, Node.js, Express, MongoDB). IT internships at BBC MediaCity and two Tameside schools."
       ]
     }
   ],
   "projects": [
     {
+      "name": "Context Desk",
+      "blurb": "Built for the Meta AI Developer Hackathon: an open-source clip studio that finds the real story moments in long recordings and live streams, then makes subtitled clips in 25 languages, with voice-cloned dubs. Meta Muse Voice transcribes and Muse Spark suggests story cuts, with the source evidence beside every suggestion so an editor checks each caption and cut before export.",
+      "repo": "https://github.com/SayamDev/context-desk",
+      "href": "https://x.com/Sayam_Ajmal/status/2118146228328534245",
+      "tags": [
+        "Meta Muse",
+        "Node.js",
+        "SQLite",
+        "FFmpeg",
+        "25 languages"
+      ]
+    },
+    {
       "name": "SixRadar",
-      "blurb": "Designed, built and run SixRadar, an independent GTA 6 news, tools and community site, live on its own domain for launch week. Live news and video from every major platform, sourced answers, an interactive map, a launch live blog, a daily quiz with a world leaderboard and opt-in browser news alerts. A sourcing rule is enforced in code: nothing is published without an official source or two independent sites that agree. Runs on Cloudflare Workers with D1 and KV, deploys on every push and scores 100 on Lighthouse accessibility. Source code is private.",
+      "blurb": "An independent GTA 6 news, tools and community hub I designed, built and run on its own domain for the biggest game launch of the year. Live news and video from YouTube, TikTok, Reddit, X and Instagram, sourced answers, an interactive map, a live blog, a radio and a daily quiz. The build fails unless every answer has an official source or two independent sites that agree. Its video channels reached 9,700+ views in launch week. Sub-second page loads, 94% rated good on Core Web Vitals.",
       "href": "https://sixradar.com",
       "tags": [
         "Astro",
         "TypeScript",
         "Cloudflare Workers",
         "D1",
-        "Web Push"
-      ]
-    },
-    {
-      "name": "Context Desk",
-      "blurb": "Built for the Meta AI Developer Hackathon, Context Desk is an open-source local video studio for finding story moments, reviewing multilingual subtitles and making editable clips. It uses Meta Muse Voice for transcription and Muse Spark to assess sampled frames and transcripts, with source evidence and editable drafts for human review.",
-      "repo": "https://github.com/SayamDev/context-desk",
-      "tags": [
-        "Node.js",
-        "JavaScript",
-        "SQLite",
-        "FFmpeg",
-        "Meta Muse"
-      ]
-    },
-    {
-      "name": "Hudl N Game",
-      "blurb": "Built a phone-first party-game PWA with five game modes on one shared device. Designed distinct game worlds, an interactive first-run guide and private hold-to-reveal controls that hide secrets on release or focus loss. Added offline custom packs, local scoring and history-aware selection to reduce repeat words and roles. An optional server-side AI adapter validates themed drafts for human review; the public demo works without AI or accounts.",
-      "href": "https://sayamdev.github.io/hudl-n-game/",
-      "repo": "https://github.com/SayamDev/hudl-n-game",
-      "tags": [
-        "React",
-        "TypeScript",
-        "Zustand",
-        "PWA",
-        "Playwright"
-      ]
-    },
-    {
-      "name": "Latest Cookie",
-      "blurb": "A free technology reading and discovery app with daily publisher headlines, selected tech videos and a source-linked model comparison lab. Built the scheduled ingestion pipeline with validated feeds, visible freshness and last-good fallbacks; added benchmark filters, charts, CSV export and browser-local bookmarks. Capability scores, popularity and API pricing remain separate so readers can see what each comparison actually means.",
-      "href": "https://sayamdev.github.io/latest-cookie/",
-      "repo": "https://github.com/SayamDev/latest-cookie",
-      "tags": [
-        "React",
-        "TypeScript",
-        "GitHub Actions",
-        "Zod",
-        "Playwright"
-      ]
-    },
-    {
-      "name": "Focus & Snuggery",
-      "blurb": "A calm place to turn a full head into one manageable action. Write or dictate a note, review the small steps, then focus on one task with an optional gentle or Pomodoro timer. Tasks and check-ins stay in the browser; optional natural read-aloud and speech recognition run on the device. Built with keyboard access, adjustable text, sensory themes and reduced motion, with rule-based suggestions available without AI.",
-      "href": "https://sayamdev.github.io/focus-and-snuggery/",
-      "repo": "https://github.com/SayamDev/focus-and-snuggery",
-      "tags": [
-        "React",
-        "TypeScript",
-        "Dexie",
-        "On-device AI",
-        "Playwright",
-        "PWA"
-      ]
-    },
-    {
-      "name": "ORUK Navigator",
-      "blurb": "Ask for help in Tameside and the answer is spread across council pages you would have to know to look for. Navigator lets you describe what is wrong in your own words, shows what might help and why it matched, and links to the council’s own page so you can check it yourself. It also publishes those services in the standard format councils use to share data, so nobody has to copy them out by hand.",
-      "href": "https://oruk-navigator.vercel.app",
-      "repo": "https://github.com/SayamDev/ORUK-Navigator",
-      "tags": [
-        "Next.js",
-        "TypeScript",
-        "PostgreSQL",
-        "C#",
-        ".NET",
-        "Open Referral UK"
+        "Short-form video"
       ]
     },
     {
       "name": "Rehearse",
-      "blurb": "Interview practice for people who never get coached: school leavers, career changers, anyone with a gap or a record they are dreading being asked about. You answer out loud, get a score and one thing to fix, then take it again and watch the number move. There is a hands-free mode where the interviewer listens, reacts to what you said and asks a follow-up, and guides for the hard parts, like how to talk about a conviction honestly. It costs nothing to run. The notes come from a free AI tier, the voice runs in the visitor’s browser, and when the free allowance runs out it switches to built-in notes instead of a paywall.",
+      "blurb": "Interview practice for people who never get coached: school leavers, career changers, anyone with a gap or a record they dread being asked about. Answer out loud, get a score and one thing to fix, try again. In hands-free mode the interviewer listens, reacts and asks a follow-up. Speech runs on the visitor’s device and the AI on a free tier, so it costs £0 a month, in 12 languages, and falls back to built-in notes instead of a paywall.",
       "href": "https://rehearse.sayamdev.workers.dev",
       "tags": [
+        "Voice AI",
         "Next.js",
-        "TypeScript",
         "Groq",
-        "Web Speech API",
+        "On-device TTS",
         "PWA"
       ]
     },
     {
       "name": "Rehearse Courage",
-      "blurb": "Rehearse’s sister app, for anyone of any age who finds it hard to speak up: answering in class, joining friends, giving a talk, ordering food or making a phone call. Every moment climbs six small steps, from thinking it to doing it for real, with calm-down tools, warm-up games, a tiny real-life dare each day and a journey page to be proud of. It rewards trying and never scores fluency, pauses or stutters. It is free, has no accounts and keeps everything on the device. Under 13s never touch generative AI, and anything typed is checked on the device for signs someone needs support.",
+      "blurb": "For anyone of any age who finds it hard to speak up: in class, with friends, on a phone call. Six small steps from thinking it to doing it, calm-down tools and a tiny real-life dare each day. It rewards trying and never scores pauses or stutters. Under 13s never touch generative AI, and typed text is checked on the device for signs someone needs support.",
       "href": "https://rehearse-courage.sayamdev.workers.dev",
       "repo": "https://github.com/SayamDev/rehearse-courage",
       "tags": [
+        "Voice AI",
         "Next.js",
-        "TypeScript",
-        "Cloudflare Workers",
         "On-device AI",
         "WCAG 2.2 AA"
       ]
     },
     {
-      "name": "Revamp",
-      "blurb": "Inbound enquiries, triaged before anyone opens them. It works out how urgent each one is and what it is actually asking for, then opens the task and drafts a reply. Nothing is sent until a person approves it. Every call the model made is logged with its reasoning, so a wrong one can be traced instead of argued about.",
-      "href": "https://sayamdev.github.io/revamp/",
-      "repo": "https://github.com/SayamDev/revamp",
-      "tags": [
-        "React",
-        "TypeScript",
-        "AI provider abstraction",
-        "n8n",
-        "Ollama"
-      ]
-    },
-    {
       "name": "TurfXI",
-      "blurb": "Running a Sunday-league side from your phone, including on pitches with no signal. Fixtures, live match events, player ratings, who still owes subs. While building it I found a hole in the database policy that let one manager read another team’s data. The fix is held in place by a test that signs in as two users and proves the door stays shut.",
+      "blurb": "The operating system for grassroots football, even on pitches with no signal: fixtures, squads, live match events, payments, stats and shareable full-time cards. I found a database policy that let one manager read another team’s data; the fix is held in place by a test that signs in as two users and proves the door stays shut.",
       "href": "https://sayamdev.github.io/turfxi-demo/",
       "repo": "https://github.com/SayamDev/turfxi-demo",
       "tags": [
         "React Native",
         "Expo",
         "Supabase",
+        "PostgreSQL RLS"
+      ]
+    },
+    {
+      "name": "Hudl N Game",
+      "blurb": "Good company, bad alibis. Seven party games on one shared phone, each with its own visual world and characters. Private hold-to-reveal roles hide your secret the moment you let go or switch apps. Packs work offline, with no accounts or ads.",
+      "href": "https://sayamdev.github.io/hudl-n-game/",
+      "repo": "https://github.com/SayamDev/hudl-n-game",
+      "tags": [
+        "React",
+        "TypeScript",
+        "PWA",
+        "Game design"
+      ]
+    },
+    {
+      "name": "Revamp",
+      "blurb": "Triages inbound business enquiries, opens the task and drafts a reply. Nothing sends until a person approves, and every model call is logged with its reasoning so a wrong one can be traced.",
+      "href": "https://sayamdev.github.io/revamp/",
+      "repo": "https://github.com/SayamDev/revamp",
+      "tags": [
+        "React",
+        "TypeScript",
+        "n8n",
+        "Ollama"
+      ]
+    },
+    {
+      "name": "ORUK Navigator",
+      "blurb": "Describe a problem in your own words and find local council help in Tameside, with why it matched and a link to the council’s own page. Also publishes the services in the Open Referral UK data standard.",
+      "href": "https://oruk-navigator.vercel.app",
+      "repo": "https://github.com/SayamDev/ORUK-Navigator",
+      "tags": [
+        "Next.js",
         "PostgreSQL",
-        "RLS"
+        "C# / .NET",
+        "Open data"
       ]
     },
     {
       "name": "Bubiqo",
-      "blurb": "A Chrome side panel that pulls the useful parts out of whatever page you have open. Job adverts: pay, closing date, contract, location, the requirements, and any condition the advert sets, each quoted from the text. Emails: the deadline, what was asked of you, what you promised. Invoices: supplier, total, reference, due date. It then offers to save it, copy it, set a reminder or make a calendar file, and it never sends, submits or pays. Nothing leaves the device and there is no model in it, which is how 477 tests hold the behaviour in place.",
-      "href": "https://github.com/SayamDev/bubiqo",
+      "blurb": "A Chrome side panel that pulls deadlines, pay, totals and promises out of whatever page you have open, then offers to save, copy or set a reminder. Nothing leaves the device and 477 tests hold the behaviour in place.",
       "repo": "https://github.com/SayamDev/bubiqo",
       "tags": [
         "TypeScript",
         "Chrome MV3",
-        "React",
         "Privacy-first",
         "Vitest"
       ]
     },
     {
+      "name": "Latest Cookie",
+      "blurb": "Daily tech headlines from the original publishers, selected videos and a source-linked AI model comparison lab with charts, filters and an API pricing calculator.",
+      "href": "https://sayamdev.github.io/latest-cookie/",
+      "repo": "https://github.com/SayamDev/latest-cookie",
+      "tags": [
+        "React",
+        "GitHub Actions",
+        "Zod"
+      ]
+    },
+    {
       "name": "SetoffIQ",
-      "blurb": "Tells you when to leave the house for a Manchester airport run. It works backwards from the flight, using where the aircraft actually is, how the roads are moving and what the airfield is reporting overhead. Hosting costs nothing. A scheduled GitHub Action fetches what a browser is not allowed to, so no key is ever shipped to the page, and anything the planner had to assume is labelled as an assumption.",
+      "blurb": "Tells you when to leave for a Manchester airport run, working back from the flight using live aircraft position, roads and airfield weather. No key is ever shipped to the page.",
       "href": "https://sayamdev.github.io/setoffiq/",
       "repo": "https://github.com/SayamDev/setoffiq",
       "tags": [
         "React",
-        "TypeScript",
-        "GitHub Actions",
         "Open data",
         "PWA"
       ]
     },
     {
-      "name": "ATC Aptitude Drills",
-      "blurb": "Free practice for the aptitude tests that select trainee air traffic controllers. It explains what each test is really measuring, teaches a method for it, and shows you afterwards where the marks went. No account, no server, nothing stored.",
-      "href": "https://github.com/SayamDev/atc-aptitude-drills",
+      "name": "Focus & Snuggery",
+      "blurb": "Turns a full head into one small next step, with gentle focus timers and on-device read-aloud. Tasks stay in the browser.",
+      "href": "https://sayamdev.github.io/focus-and-snuggery/",
+      "repo": "https://github.com/SayamDev/focus-and-snuggery",
       "tags": [
-        "TypeScript",
         "React",
-        "Open source"
+        "Dexie",
+        "On-device AI"
       ]
     }
   ],
@@ -280,13 +266,7 @@
       "period": "2017 – 2020",
       "subjects": [
         "Web and Database Development",
-        "SQL",
-        "Python",
-        "Java",
-        "JavaScript",
-        "PHP",
         "Analytics",
-        "Systems Thinking",
         "UX Research",
         "E-commerce",
         "Business Strategy"
@@ -298,13 +278,10 @@
       "institution": "Ashton Sixth Form",
       "period": "",
       "subjects": [
-        "Data Modelling",
         "Programming",
+        "Data Modelling",
         "Software Testing",
-        "IT Project Management",
-        "Cyber Security & Incident Management",
-        "Website Development",
-        "Cloud Storage & Collaboration"
+        "Cyber Security"
       ]
     }
   ],
@@ -312,99 +289,65 @@
     "ISO 27001",
     "Google Digital Marketing",
     "Responsive Web Design",
-    "AI Governance & Ethics",
-    "AI Ethics",
-    "AI for Work"
+    "AI Governance & Ethics"
   ],
   "skills": [
     {
-      "label": "Data & analytics",
+      "label": "Build",
       "items": [
-        "SQL",
-        "Power BI",
-        "Relational data modelling",
-        "GA4",
-        "Data layers",
-        "Data auditing",
-        "Reporting & visualisation",
-        "Digital measurement"
-      ]
-    },
-    {
-      "label": "Development",
-      "items": [
-        "JavaScript",
         "TypeScript",
         "React",
-        "React Native",
-        "HTML",
-        "CSS / SCSS",
+        "Next.js",
+        "React Native / Expo",
         "Node.js",
-        "Express.js",
-        "MongoDB"
+        "Astro",
+        "PostgreSQL / Supabase",
+        "Cloudflare Workers / D1",
+        "PWAs",
+        "Playwright"
       ]
     },
     {
-      "label": "Solutions & automation",
+      "label": "AI and voice",
       "items": [
-        "Workflow automation",
-        "REST APIs",
-        "System & tool integration",
-        "Process improvement",
-        "Requirements analysis",
-        "Proof of concept",
-        "CRM",
-        "n8n",
-        "Supabase"
+        "LLM apps (Claude, Groq, Ollama)",
+        "Speech to text (Whisper)",
+        "On-device TTS (Kokoro)",
+        "Meta Muse",
+        "Agent workflows",
+        "Prompt and fallback design"
       ]
     },
     {
-      "label": "AI & automation",
+      "label": "Content and growth",
       "items": [
-        "Claude",
-        "GitHub Copilot",
-        "Amazon Q",
-        "LLM workflows",
-        "Prompt engineering"
+        "YouTube Shorts",
+        "TikTok",
+        "Hooks and titles",
+        "Cover design",
+        "YouTube and Cloudflare analytics",
+        "Paid social",
+        "SEO"
       ]
     },
     {
-      "label": "Quality & compliance",
+      "label": "Product and data",
       "items": [
-        "Functional & UI testing",
-        "Defect investigation",
-        "Audit trails",
-        "Structured testing processes",
-        "ISO 27001 awareness"
+        "UX research",
+        "A/B testing",
+        "GA4 and data layers",
+        "Power BI",
+        "WCAG accessibility"
       ]
     },
     {
       "label": "Delivery",
       "items": [
-        "Agile",
-        "Scrum",
-        "User stories",
+        "Agile / Scrum",
         "Stakeholder communication",
         "Git",
-        "Jenkins",
         "CI/CD",
         "Azure DevOps"
-      ]
-    },
-    {
-      "label": "Research methods",
-      "items": [
-        "Usability testing",
-        "Heuristic evaluation",
-        "Journey mapping",
-        "Heatmaps",
-        "Card sorting",
-        "SUS surveys",
-        "A/B testing",
-        "Competitor analysis",
-        "UX audits",
-        "User flows",
-        "Personas"
       ]
     }
   ],

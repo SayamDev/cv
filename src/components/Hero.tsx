@@ -17,16 +17,24 @@ export function Hero({ cv, baseUrl }: { cv: CV; baseUrl: string }) {
   return (
     <header className="pt-14 pb-2 sm:pt-20">
       <p className="text-[11px] font-semibold tracking-[0.18em] text-accent uppercase">
-        Curriculum vitae
+        Curriculum vitae · available now
       </p>
 
-      <h1 className="mt-4 font-display text-[clamp(2.75rem,9vw,5rem)] leading-[0.95] font-medium tracking-[-0.02em] text-ink">
+      <h1 className="mt-4 font-display text-[clamp(2.75rem,9vw,5.25rem)] leading-[0.92] font-extrabold tracking-[-0.04em] text-ink">
         {cv.name}
       </h1>
 
-      <p className="mt-4 max-w-2xl font-display text-[clamp(1.15rem,3vw,1.5rem)] leading-snug text-ink-2 italic">
+      <p className="mt-4 max-w-2xl font-display text-[clamp(1.15rem,3vw,1.5rem)] leading-snug text-ink-2">
         {cv.headline}
       </p>
+
+      <ul className="mt-5 flex flex-wrap gap-2" aria-label="Open to">
+        {cv.openTo.map((role) => (
+          <li key={role} className="rounded-full bg-panel px-3 py-1.5 text-[12.5px] font-medium text-ink">
+            {role}
+          </li>
+        ))}
+      </ul>
 
       <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13.5px]">
         <span className="inline-flex items-center gap-1.5 text-ink-3">
@@ -70,7 +78,7 @@ export function Hero({ cv, baseUrl }: { cv: CV; baseUrl: string }) {
           <div key={point.label} className="bg-surface px-4 py-4">
             <dt className="sr-only">{point.label}</dt>
             <dd>
-              <span className="block font-display text-[clamp(1.5rem,4vw,2rem)] leading-none font-medium tracking-[-0.01em] text-ink">
+              <span className="block font-display text-[clamp(1.5rem,4vw,2rem)] leading-none font-extrabold tracking-[-0.02em] text-ink">
                 {point.value}
               </span>
               <span className="mt-2 block text-[12px] leading-snug text-ink-3">{point.label}</span>

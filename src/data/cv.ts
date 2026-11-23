@@ -74,12 +74,12 @@ export const cv: CV = {
   ],
   openTo: ['Product Engineer', 'Founding Engineer', 'Developer Advocate', 'Product Owner', 'Content & Growth'],
   summary:
-    'Product engineer in Manchester. Four years shipping customer-facing React and TypeScript at Plusnet and Tata Consultancy Services, on journeys used by more than 800,000 customers. Since May 2026 I have designed, built and launched ten products of my own end to end, including a voice interviewer that listens and asks follow-ups, on-device speech that costs nothing to run, a launch-week GTA 6 hub, and a clip studio built for the Meta AI Developer Hackathon. I also make the content: I started SixRadar’s YouTube, TikTok, Instagram and Facebook channels from zero and grew them to 20K+ views in launch week, choosing moments from the data and reading the analytics to decide what to make next. I care about the parts that decide whether people trust a product: what happens when the AI is wrong, when the signal drops, or when someone goes looking for a hole.',
+    'Product engineer in Manchester. Four years shipping customer-facing React and TypeScript at Plusnet and Tata Consultancy Services, on journeys used by more than 800,000 customers. Since May 2026 I have designed, built and launched ten products of my own end to end, including a voice interviewer that listens and asks follow-ups, on-device speech that costs nothing to run, a launch-week GTA 6 hub, and a clip studio built for the Meta AI Developer Hackathon. I also make the content: I started SixRadar’s YouTube, TikTok, Instagram and Facebook channels from zero and grew them to 30K+ views in launch week, choosing moments from the data and reading the analytics to decide what to make next. I care about the parts that decide whether people trust a product: what happens when the AI is wrong, when the signal drops, or when someone goes looking for a hole.',
   proofPoints: [
     { value: '800k+', label: 'Customers on journeys I built at Plusnet' },
     { value: '4+ yrs', label: 'Commercial front-end and full-stack delivery' },
     { value: '10', label: 'Live products designed, built and launched in 2026' },
-    { value: '20K+', label: 'Video views in GTA 6 launch week' },
+    { value: '30K+', label: 'Video views in GTA 6 launch week' },
   ],
   roles: [
     {
@@ -92,7 +92,7 @@ export const cv: CV = {
         'Designed, built and launched ten live products on Cloudflare Workers, Vercel and Supabase, owning everything from data model and design system to deployment, most running at £0 a month.',
         'Built voice AI end to end: speech in, an LLM that reacts and asks a follow-up, natural voice out, with on-device text to speech in a Web Worker and three fallback layers.',
         'Built Context Desk for the Meta AI Developer Hackathon on Meta Muse Voice and Muse Spark: live clipping, story cuts, subtitles in 25 languages and voice-cloned dubs.',
-        'Launched SixRadar for GTA 6 launch week and grew its YouTube, TikTok, Instagram and Facebook channels to 20K+ views, using a capture, clipping and captioning pipeline I built.',
+        'Launched SixRadar for GTA 6 launch week and grew its YouTube, TikTok, Instagram and Facebook channels to 30K+ views, using a capture, clipping and captioning pipeline I built.',
         'Ran the channels like a growth experiment: a script ranks live-stream moments by chat spikes, then I write the hook, caption it, design the cover and track which formats land (top Short: 3,200 views).',
         'Found and fixed a cross-tenant data leak in a Supabase row-level security policy, locked in by a test that signs in as two users.',
       ],
@@ -162,7 +162,7 @@ export const cv: CV = {
     {
       name: 'SixRadar',
       blurb:
-        'An independent GTA 6 news, tools and community hub I designed, built and run on its own domain for the biggest game launch of the year. Live news and video from YouTube, TikTok, Reddit, X and Instagram, sourced answers, an interactive map, a live blog, a radio and a daily quiz. The build fails unless every answer has an official source or two independent sites that agree. Its video channels reached 20K+ views in launch week. Sub-second page loads, 94% rated good on Core Web Vitals.',
+        'An independent GTA 6 news, tools and community hub I designed, built and run on its own domain for the biggest game launch of the year. Live news and video from YouTube, TikTok, Reddit, X and Instagram, sourced answers, an interactive map, a live blog, a radio and a daily quiz. The build fails unless every answer has an official source or two independent sites that agree. Its video channels reached 30K+ views in launch week. Sub-second page loads, 94% rated good on Core Web Vitals.',
       href: 'https://sixradar.com',
       tags: ['Astro', 'TypeScript', 'Cloudflare Workers', 'D1', 'Short-form video'],
     },
